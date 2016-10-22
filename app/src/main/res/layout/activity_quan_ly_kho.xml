@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".activity.handlingadd.ThemMatHangActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <TextView
+            style="@style/size16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên mặt hàng:"/>
+        <EditText
+            android:id="@+id/editTextQLKtenmathang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên mặt hàng"/>
+        <TextView
+            style="@style/size16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại mặt hàng:"/>
+        <Spinner
+            android:id="@+id/spinnerQLKLoaiMatHang"
+            style="@style/size16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+        <TextView
+            style="@style/size16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng:"/>
+        <EditText
+            android:id="@+id/editTextQLKsoluong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số lượng"/>
+        <TextView
+            style="@style/size16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá nhập:"/>
+        <EditText
+            android:id="@+id/editTextQLKgianhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá nhập"/>
+        <TextView
+            style="@style/size16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá bán:"/>
+        <EditText
+            android:id="@+id/editTextQLKgiaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá bán"/>
+        <TextView
+            style="@style/size16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày nhập kho:"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewQLKChonDate"
+                style="@style/size16"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="30/09/2016"/>
+            <TextView
+                android:id="@+id/textViewQLKDateNow"
+                style="@style/size16"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Now"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/textview_background"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/buttonQLKXoaTrang"
+            android:layout_height="wrap_content"
+            android:text="Xóa Trắng"/>
+        <Button
+            android:id="@+id/buttonQLKLuu"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/textview_background"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lưu"/>
+    </LinearLayout>
+</RelativeLayout>
